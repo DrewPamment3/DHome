@@ -1,6 +1,7 @@
-import { motion } from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
 
-const Card = ({ title, description, image }: { title: string; description: string; image: string }) => {
+const Card = ({ title, description  }) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9, y: 50 }}

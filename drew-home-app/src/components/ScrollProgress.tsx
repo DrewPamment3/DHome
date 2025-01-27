@@ -1,7 +1,7 @@
-// components/ScrollProgress.tsx
-import React, { useState, useEffect } from "react";
+// src/components/ScrollProgress.tsx
+import React, { useState, useEffect } from 'react';
 
-const ScrollProgress = ({ sectionIds }: { sectionIds: string[] }) => {
+const ScrollProgress = ({ sectionIds }) => {
   const [currentSection, setCurrentSection] = useState(0);
 
   const handleScroll = () => {
@@ -17,8 +17,8 @@ const ScrollProgress = ({ sectionIds }: { sectionIds: string[] }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [sectionIds]);
 
   return (
@@ -28,7 +28,7 @@ const ScrollProgress = ({ sectionIds }: { sectionIds: string[] }) => {
           <div
             key={index}
             className={`w-3 h-3 rounded-full ${
-              currentSection === index ? "bg-blue-500" : "bg-gray-400"
+              currentSection === index ? 'bg-blue-500' : 'bg-gray-400'
             }`}
           ></div>
         ))}

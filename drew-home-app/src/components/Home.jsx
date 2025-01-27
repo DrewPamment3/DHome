@@ -1,36 +1,41 @@
-import React, { useState } from 'react';
-import Card from '../components/Card';
+import React from 'react';
+import ScrollProgress from './ScrollProgress.tsx';
+import Card from './Card.jsx'; // Assuming this is where the Card component is located.
 
 const Home = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-
-  const handleMouseEnter = (index) => {
-    setHoveredIndex(index);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredIndex(null);
-  };
+  const sectionIds = ['home', 'about', 'contact'];
 
   return (
-    <div className="bg-gray-800 text-gray-100 min-h-screen pt-16">
-      {/* Frosted Glass Container */}
-      <div className="bg-gray-900/50 backdrop-blur-lg rounded-lg p-8 w-full mx-auto">
-        {/* Heading */}
-        <h1 className="text-center text-3xl font-bold mb-8">My Projects</h1>
+    <div className="relative bg-gray-900 text-white">
+      {/* Scroll Progress Bar */}
+      <ScrollProgress sections={['home', 'about', 'contact']} />
 
-        {/* Carousel Container */}
-        <div className="flex justify-center items-center space-x-4 px-4">
-          {['Project 1', 'Project 2', 'Project 3'].map((title, index) => (
-            <Card
-              key={index}
-              title={title}
-              isHovered={hoveredIndex === index}
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
-            />
-          ))}
-        </div>
+      {/* Scrollable Sections */}
+      <div className="snap-y snap-mandatory h-screen overflow-scroll">
+        {/* Section: Home */}
+        <section id="home" className="snap-start h-screen flex justify-center items-center">
+          <div className="w-full max-w-5xl px-4 text-center">
+            <h1 className="text-4xl font-bold mb-8">Welcome to My Home Page</h1>
+            <Card title="Project 1" description="Project details here" />
+            <Card title="Project 2" description="Another project" />
+          </div>
+        </section>
+
+        {/* Section: About */}
+        <section id="about" className="snap-start h-screen flex justify-center items-center">
+          <div className="w-full max-w-5xl px-4 text-center">
+            <h1 className="text-4xl font-bold mb-4">About Me</h1>
+            <p className="text-lg">I’m passionate about creating awesome things!</p>
+          </div>
+        </section>
+
+        {/* Section: Contact */}
+        <section id="contact" className="snap-start h-screen flex justify-center items-center">
+          <div className="w-full max-w-5xl px-4 text-center">
+            <h1 className="text-4xl font-bold mb-4">Contact Me</h1>
+            <p className="text-lg">Get in touch to discuss projects or collaborations!</p>
+          </div>
+        </section>
       </div>
     </div>
   );
