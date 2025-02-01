@@ -1,7 +1,9 @@
+
 html,
 body {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  background-color: black;
 }
 
 section {
@@ -12,3 +14,21 @@ div.cursor-pointer:hover {
   transform: scale(1.2);
   transition: transform 0.2s ease-in-out;
 }
+
+.diagonal-image {
+  width: 100%;
+  height: auto;
+  clip-path: polygon(0% 10%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.react-multiple-carousel__arrow--left {
+  display: none;
+}
+
+/* ribbon ccut
+.diagonal-image {
+  width: 100%;
+  height: auto;
+  clip-path: polygon(0% 75%, 50% 0%, 100% 0%, 25% 100%);
+}
+*/
