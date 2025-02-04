@@ -1,0 +1,87 @@
+{
+    "resume": {
+      "name": "Drew Pamment",
+      "title": "IT Administrator & Support Technician",
+      "summary": "IT professional with experience in system administration, and a love & focus on security.",
+      "contact": {
+        "email": "drew.pamment3@gmail.com",
+        "phone": "+61 (0)428 838 521",
+        "linkedin": "https://www.linkedin.com/in/drewpamment",
+        "github": "https://github.com/DrewPamment3"
+      },
+      "education": [
+        {
+          "degree": "Bachelor of Information Technology",
+          "institution": "Macquarie University",
+          "location": "Macquarie Perk, NSW, Australia",
+          "year": "Expected 2025"
+        }
+      ],
+      "experience": [
+        {
+          "title": "IT Helpdesk Support / On-Site Technician",
+          "company": "MSP Prodigy Communications / On-Site at Nick Scali Furniture HQ",
+          "location": "North Ryde, Australia",
+          "start_date": "2023",
+          "end_date": "Present",
+          "description": [
+            "Manage IT infrastructure and support for approximately 100 business locations.",
+            "Conduct network upgrades, security hardening, and system refurbishments.",
+            "Ensure smooth business operations through proactive troubleshooting.",
+            "Work closely with end-users, technical teams, and executives to bridge communication gaps."
+          ]
+        }
+      ],
+      "skills": {
+        "technical": [
+          "System Administration",
+          "Network Security & VPNs",
+          "Cloud Computing (Azure)",
+          "Cybersecurity Best Practices"
+        ],
+        "soft": [
+          "Problem-Solving",
+          "Project Management",
+          "Client Communication",
+          "Process Automation",
+          "Critical Thinking"
+        ]
+      },
+      "projects": [
+        {
+          "name": "myHome",
+          "description": "A home automation dashboard built with React, designed for managing smart home devices efficiently.",
+          "repo": "https://github.com/DrewPamment3/DrewHome"
+        },
+        {
+          "name": "Flexicon",
+          "description": "A SaaS platform for personal trainers to manage client schedules, track workouts, and provide instructional videos.",
+          "status": "In development"
+        },
+        {
+          "name": "Chapters",
+          "description": "A lightweight, userless Kanban board built using MongoDB, Express, React, and Node.js, designed for easy collaboration.",
+          "repo": "https://github.com/DrewPamment3/Chapters"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect – Associate",
+          "issued_by": "Amazon Web Services",
+          "year": "2024"
+        },
+        {
+          "name": "CompTIA Security+",
+          "issued_by": "CompTIA",
+          "year": "2023"
+        }
+      ],
+      "languages": [
+        {
+          "language": "English",
+          "proficiency": "Fluent"
+        }
+      ]
+    }
+  }
+  

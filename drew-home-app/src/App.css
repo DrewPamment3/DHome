@@ -6,9 +6,6 @@ body {
   background-color: black;
 }
 
-section {
-  scroll-snap-align: start;
-}
 
 div.cursor-pointer:hover {
   transform: scale(1.2);

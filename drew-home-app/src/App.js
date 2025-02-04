@@ -4,8 +4,7 @@ import Navbar from './components/navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
-import Login from './components/ProjectCarousel';
-
+import Resume from './components/Resume';
 function App() {
   return (
     <Router>
@@ -16,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </div>
     </Router>
